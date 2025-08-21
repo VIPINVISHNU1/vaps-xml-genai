@@ -1,0 +1,13 @@
+Create a heading input field for flight navigation:
+- Position: X: 250, Y: 200
+- Size: Width: 80, Height: 30
+- Input type: Numeric, 0-359 degrees
+- Background: White with black text
+- Font: Arial, size 14
+- Placeholder: "000°"
+- Validation: Must be between 0 and 359
+- Format: Always show 3 digits with leading zeros and degree symbol
+- Border: 2px solid gray, becomes blue when focused
+- On change: Update HEADING_COMMANDED variable
+- Include up/down spinner buttons
+- Tooltip: "Enter desired heading (000-359 degrees)"

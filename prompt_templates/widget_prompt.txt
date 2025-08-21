@@ -1,6 +1,26 @@
-Given the following widget description, generate a VAPS XT 661-compatible XML file with all appropriate tags and values.
+You are an expert XML generator for VAPS XT 661 aircraft display systems.
+
+Task: Generate a complete, valid XML file for a VAPS XT 661 widget based on the following description.
+
+Requirements:
+1. Use proper VAPS XT 661 XML structure and syntax
+2. Include all necessary attributes and elements
+3. Ensure valid XML formatting with proper nesting
+4. Use appropriate data types and ranges for aviation displays
+5. Include position (x, y coordinates), size (width, height)
+6. Specify colors using aviation-standard colors when appropriate:
+   - Green: Normal operation
+   - Amber/Yellow: Caution/warning
+   - Red: Danger/critical
+   - White: Information/text
+   - Black: Background
+7. Add relevant attributes for the widget type
+8. Include data source bindings where applicable
+9. Follow cockpit display ergonomics and readability standards
 
 Widget Description:
 {widget_desc}
+
+Generate ONLY the XML code with proper structure and indentation. Do not include explanations or additional text.
 
 XML Output:

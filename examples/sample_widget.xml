@@ -1,6 +1,28 @@
-<Widget type="Button">
-  <Label>Start</Label>
-  <Position x="40" y="80" />
-  <Size width="120" height="40" />
-  <Color>Blue</Color>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VAPS XT 661 Emergency Stop Button Example -->
+<Widget type="Button" id="emergencyStopButton">
+  <Label>EMERGENCY STOP</Label>
+  <Position x="400" y="300" />
+  <Size width="180" height="60" />
+  <BackgroundColor>red</BackgroundColor>
+  <TextColor>white</TextColor>
+  <FontSize>16</FontSize>
+  <FontWeight>bold</FontWeight>
+  <Border>
+    <Width>3</Width>
+    <Color>darkred</Color>
+    <Style>solid</Style>
+  </Border>
+  <OnClick>
+    <Action>EmergencyShutdownSequence</Action>
+    <Confirmation>true</Confirmation>
+    <ConfirmationMessage>Are you sure you want to initiate emergency shutdown?</ConfirmationMessage>
+  </OnClick>
+  <Tooltip>Press to initiate emergency shutdown</Tooltip>
+  <State>enabled</State>
+  <Priority>critical</Priority>
+  <Accessibility>
+    <HighContrast>true</HighContrast>
+    <LargeText>true</LargeText>
+  </Accessibility>
 </Widget>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VAPS XT 661 Button Widget Example -->
+<Widget type="Button" id="startButton">
+  <Label>Start Engine</Label>
+  <Position x="100" y="200" />
+  <Size width="120" height="40" />
+  <BackgroundColor>green</BackgroundColor>
+  <TextColor>white</TextColor>
+  <FontSize>14</FontSize>
+  <FontWeight>bold</FontWeight>
+  <Border>
+    <Width>2</Width>
+    <Color>darkgreen</Color>
+    <Style>solid</Style>
+  </Border>
+  <OnClick>
+    <Action>StartEngineSequence</Action>
+    <Confirmation>true</Confirmation>
+  </OnClick>
+  <Tooltip>Click to start engine startup sequence</Tooltip>
+  <State>enabled</State>
+</Widget>

@@ -1,0 +1,12 @@
+Create a fuel quantity gauge for aircraft fuel monitoring:
+- Type: Vertical bar gauge
+- Position: X: 50, Y: 150  
+- Size: Width: 40, Height: 200
+- Range: 0 to 100 percent
+- Colors: Green (above 50%), Amber (25-50%), Red (below 25%)
+- Labels: Show percentage values at 0%, 25%, 50%, 75%, 100%
+- Background: Black with white scale markings
+- Data source: FUEL_QUANTITY_PERCENT variable
+- Update rate: 1 Hz
+- Include low fuel warning at 15%
+- Show current numeric value above the gauge

@@ -1,0 +1,11 @@
+Generate a simple VAPS XT 661 XML widget for rapid prototyping.
+
+Description: {widget_desc}
+
+Create XML with:
+- Basic required attributes only
+- Standard positioning and sizing
+- Default colors and styling
+- Minimal but functional structure
+
+Keep it simple and functional. Output XML only:
