@@ -1,0 +1,6 @@
+<Widget type="Button">
+  <Label>Start</Label>
+  <Position x="40" y="80" />
+  <Size width="120" height="40" />
+  <Color>Blue</Color>
+</Widget>

@@ -1,0 +1,6 @@
+Given the following widget description, generate a VAPS XT 661-compatible XML file with all appropriate tags and values.
+
+Widget Description:
+{widget_desc}
+
+XML Output:

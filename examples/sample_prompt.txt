@@ -1,0 +1,5 @@
+Create an XML file for a VAPS XT 661 Button widget with:
+- Label: 'Start'
+- X: 40, Y: 80
+- Width: 120, Height: 40
+- Color: Blue
