@@ -1,0 +1,10 @@
+Create a digital altitude display for aircraft showing current altitude in feet:
+- Position: X: 100, Y: 50
+- Size: Width: 150, Height: 40
+- Background: Black with green text
+- Font: Monospace, size 18, bold
+- Format: Show altitude with thousands separator (e.g., "15,250 FT")
+- Data source: ALTITUDE_FEET variable
+- Update rate: 10 Hz (real-time)
+- Range: -1000 to 50000 feet
+- Validation: Show warning if altitude is below 500 feet

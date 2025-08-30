@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VAPS XT 661 LED Indicator Example -->
+<Widget type="LED" id="engineWarningLED">
+  <Position x="400" y="50" />
+  <Size width="20" height="20" />
+  <Shape>circle</Shape>
+  
+  <States>
+    <State name="normal">
+      <Color>green</Color>
+      <Brightness>0.8</Brightness>
+      <Blinking>false</Blinking>
+    </State>
+    <State name="warning">
+      <Color>amber</Color>
+      <Brightness>1.0</Brightness>
+      <Blinking>true</Blinking>
+      <BlinkRate>2</BlinkRate>
+    </State>
+    <State name="critical">
+      <Color>red</Color>
+      <Brightness>1.0</Brightness>
+      <Blinking>true</Blinking>
+      <BlinkRate>4</BlinkRate>
+    </State>
+    <State name="off">
+      <Color>gray</Color>
+      <Brightness>0.2</Brightness>
+      <Blinking>false</Blinking>
+    </State>
+  </States>
+  
+  <CurrentState>normal</CurrentState>
+  
+  <Border>
+    <Width>1</Width>
+    <Color>darkgray</Color>
+  </Border>
+  
+  <DataSource>
+    <Variable>ENGINE_WARNING_LEVEL</Variable>
+    <UpdateRate>5</UpdateRate>
+    <Mapping>
+      <Value>0</Value>
+      <State>normal</State>
+    </Mapping>
+    <Mapping>
+      <Value>1</Value>
+      <State>warning</State>
+    </Mapping>
+    <Mapping>
+      <Value>2</Value>
+      <State>critical</State>
+    </Mapping>
+  </DataSource>
+  
+  <Tooltip>Engine warning indicator</Tooltip>
+</Widget>

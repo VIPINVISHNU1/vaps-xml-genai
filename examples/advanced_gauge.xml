@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VAPS XT 661 Gauge Widget Example -->
+<Widget type="Gauge" id="rpmGauge">
+  <Type>Circular</Type>
+  <Position x="300" y="100" />
+  <Size width="150" height="150" />
+  <Range min="0" max="6000" />
+  <Value>2400</Value>
+  <Units>RPM</Units>
+  
+  <Scale>
+    <MajorTicks>
+      <Interval>1000</Interval>
+      <Color>white</Color>
+      <Length>10</Length>
+    </MajorTicks>
+    <MinorTicks>
+      <Interval>200</Interval>
+      <Color>gray</Color>
+      <Length>5</Length>
+    </MinorTicks>
+    <Labels>
+      <Color>white</Color>
+      <FontSize>10</FontSize>
+      <Position>outside</Position>
+    </Labels>
+  </Scale>
+  
+  <Needle>
+    <Color>white</Color>
+    <Width>2</Width>
+    <Style>arrow</Style>
+  </Needle>
+  
+  <ColorBands>
+    <Band>
+      <StartValue>0</StartValue>
+      <EndValue>1000</EndValue>
+      <Color>red</Color>
+      <Alpha>0.3</Alpha>
+    </Band>
+    <Band>
+      <StartValue>1000</StartValue>
+      <EndValue>5000</EndValue>
+      <Color>green</Color>
+      <Alpha>0.3</Alpha>
+    </Band>
+    <Band>
+      <StartValue>5000</StartValue>
+      <EndValue>5500</EndValue>
+      <Color>amber</Color>
+      <Alpha>0.3</Alpha>
+    </Band>
+    <Band>
+      <StartValue>5500</StartValue>
+      <EndValue>6000</EndValue>
+      <Color>red</Color>
+      <Alpha>0.3</Alpha>
+    </Band>
+  </ColorBands>
+  
+  <RedLine value="5500" />
+  <YellowLine value="5000" />
+  
+  <BackgroundColor>black</BackgroundColor>
+  <BorderColor>gray</BorderColor>
+  <BorderWidth>1</BorderWidth>
+  
+  <DataSource>
+    <Variable>ENGINE_RPM</Variable>
+    <UpdateRate>10</UpdateRate>
+  </DataSource>
+</Widget>

@@ -1,5 +1,10 @@
-Create an XML file for a VAPS XT 661 Button widget with:
-- Label: 'Start'
-- X: 40, Y: 80
-- Width: 120, Height: 40
-- Color: Blue
+Create an XML file for a VAPS XT 661 Emergency Stop Button widget with:
+- Label: 'EMERGENCY STOP'
+- Position: X: 400, Y: 300
+- Size: Width: 180, Height: 60  
+- Colors: Red background, white text
+- Font: Bold, size 16
+- Border: 3px solid dark red
+- Action: Emergency shutdown sequence with confirmation
+- Tooltip: 'Press to initiate emergency shutdown'
+- State: Always enabled and highly visible
